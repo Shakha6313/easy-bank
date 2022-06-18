@@ -1,0 +1,199 @@
+.main {
+    position: relative;
+    
+}
+
+.content {
+
+		&__top {
+            padding-top: 170px;
+            padding-bottom: 170px;
+            padding-left: 165px;
+            background-image: url(./../../img/bg-img-main.png);
+            background-repeat: no-repeat;
+            background-position: calc(550px);
+            background-size: auto;
+		}
+
+		&__info {
+		}
+
+		&__heading {
+            font-family: 'Public Sans';
+            font-weight: 100;
+            font-size: 56px;
+            line-height: 64px;
+            letter-spacing: -1px;
+            color: #2D314D;
+            width: 394px;
+            margin-bottom: 24px;
+		}
+
+		&__text {
+            font-family: 'PublicSans';
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: -0.28125px;
+            color: #9597A5;
+            width: 474px;
+            margin-bottom: 36px;
+		}
+
+		&__btn {
+            font-family: 'Public Sans';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 28px;
+            color: #FFFFFF;
+            background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+            padding: 8px 36px;
+            mix-blend-mode: normal;
+            opacity: 0.4;
+            border-radius: 22px;
+            opacity: 1;
+
+            &:hover{
+                background: #30C88F;
+                opacity: 0.5;
+            }
+		}
+}
+
+
+
+.choose {
+    background: #F4F5F7;
+    z-index: -1;
+
+
+    &__info {
+        padding-top: 96px;
+    }
+
+    &__heading {
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 64px;
+        letter-spacing: -0.714286px;
+        color: #2D314D;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.28125px;
+        color: #9597A5;
+        width: 635px;
+        margin-bottom: 72px;
+    }
+
+    &__list {
+        padding-bottom: 94px;
+        margin-bottom: 174px;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+
+        &::before{
+            content: "";
+            display: inline-block;
+            background-image: url(./../../img/online-banking.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 40px;
+            padding: 16px;
+            width: 72px;
+            height: 72px;
+        }
+
+    }
+
+    &__item-heading {
+        font-weight: 100;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.428571px;
+        color: #2D314D;
+        margin-bottom: 26px;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.25px;
+        color: #9597A5;
+        width: 255px;
+    }
+}
+
+.article {
+    background: #F2F2F2;
+    margin-bottom: 80px;
+
+    &__heading {
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 64px;
+        letter-spacing: -0.714286px;
+        color: #2D314D;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        max-width: 255px;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+        gap: 30px;
+        border-radius: 10px;
+    }
+
+    &__text{
+        padding: 24px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+    }
+
+    &__item {
+        transition: all 0.5s ease;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &__img {
+    }
+
+    &__owner {
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: -0.15625px;
+        color: #9597A5;
+        margin-bottom: 8px;
+    }
+
+    &__link {
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.285714px;
+        color: #2D314D;
+        margin-bottom: 8px;
+
+        &:hover{
+            color: #30C88F;
+        }
+    }
+
+    &__info {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.203125px;
+        color: #9597A5;
+        margin-top: 8px;
+    }
+}

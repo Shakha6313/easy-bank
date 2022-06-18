@@ -1,0 +1,121 @@
+.header {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+		&__list {
+            display: flex;
+            gap: 30px;
+		}
+
+		&__item {
+        }
+        
+		&__link {
+            font-family: 'PublicSans';
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: -0.107692px;
+            color: #9597A5;
+            padding-bottom: 28px;
+
+            &:active{
+                color: #000;
+            }
+
+            &:hover{
+                border-bottom: 4px solid #33D35E;
+            }
+		}
+
+		&__btn {
+            font-family: 'Public Sans';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 28px;
+            color: #FFFFFF;
+            background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+            padding: 8px 36px;
+            mix-blend-mode: normal;
+            opacity: 0.4;
+            border-radius: 22px;
+            opacity: 1;
+
+            &:hover{
+                background: #30C88F;
+                opacity: 0.5;
+            }
+		}
+
+        .nav {
+            
+
+            &__hamburger {
+                border: none;
+                outline: none;
+                background-color: #fff;
+                cursor: pointer;
+                display: none;
+            }
+        }
+        .hamburger {
+            
+            &__img {
+                display: none;
+            }
+    }
+
+    
+}
+
+@media only screen and (max-width: 710px) {
+
+    .header {
+        
+    }
+    
+    .nav {
+        
+            &__list {
+                display: none;
+            }
+    
+            &__item {
+                
+            }
+            
+            &__link {
+            }
+            
+            &__btn {
+                display: none;
+            }
+        }
+
+        .nav {
+
+            display: block;
+
+            &__hamburger {
+                background-color: #fff;
+                cursor: pointer;
+                display: block;
+                width: 24px;
+                height: 11px;
+            }
+    }
+
+    .hamburger {
+    
+            &__img {
+                display: block;
+            }
+    }
+
+     
+}
